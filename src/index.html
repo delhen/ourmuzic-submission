@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ourmuzic</title>
+</head>
+<body>
+
+    <header class="sticky-top"></header>
+
+    <main class="container-fluid">
+        <article class="row container mx-auto">
+            <div class="col-md text-center img-placeholder"></div>
+            <div class="col-md my-auto text-align-custom">
+                <h3>The best music blog you've ever seen!</h3>
+                <p>Find something you love and go for it with all your heart. No excuses, no plan B. Never settle for anything less than you know you can do. Ourmuzic will provide some best quality music and news for you.</p>
+            </div>
+        </article>
+
+        <article class="row with-bg-purple">
+            <div class="container p-4">
+                <h3>Get the latest news that related to your favourite artist!</h3>
+                <search-bar 
+                placeholder="Search artist name..." 
+                width="50" 
+                color="#677BE3"
+                aim="searchArtist"></search-bar>
+                <div class="row my-2" id="searchArtistResult"></div>
+            </div>
+        </article>
+
+        <article class="container">
+            <section class="row">
+                <div class="col-md text-center my-4 img-placeholder"></div>
+                <div class="col-md my-auto text-align-custom">
+                    <h3>Find your favourite musics now!</h3>
+                    <p>We provide some quality music from quality artists. The price is cheap and affordable. We want our customer enjoy the music without more effort in spending money!</p>
+                    <search-bar 
+                    placeholder="Search track..." 
+                    width=100 
+                    color="#FD94B3"
+                    aim="searchTrack"></search-bar>
+                </div>
+            </section>
+            
+            <h3 class="mt-4">Search result</h3>
+            <track-list></track-list>
+        </article>
+
+        <article class="row with-bg-blue">
+            <section class="container p-4 row mx-auto my-4 text-align-custom">
+                <div class="col-lg my-4 img-placeholder"></div>
+                <div class="col-lg my-auto">
+                    <h3>Still doubt? Check our testimonies!</h3>
+                    <p>Still not convinced? Don't worry! Here are some assessment from our customer from any background, professional buyer to newbie buyer! We hope you have no doubt after read this.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card text-center text-dark p-4 shadow">
+                                <h6>Martin Suhada</h6>
+                                <p>Good music! The best music shop ever</p>
+                                <h3>9/10</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card text-center text-dark p-4 shadow">
+                                <h6>Martin Suhada</h6>
+                                <p>Good music! The best music shop ever</p>
+                                <h3>9/10</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer text-center with-bg-bluedark p-4 text-light">
+        2020 Ourmuzic Right Reserved
+    </footer>
+</body>
+</html>
